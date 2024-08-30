@@ -15,7 +15,6 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
 
-        // TODO: maybe instead of expect, handle the error and not crash?
         let guess: u32 = match guess.trim().parse() {
             Err(_) => continue,
             Ok(hi) => hi,
